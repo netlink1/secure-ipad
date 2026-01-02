@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Photo Access</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+
+</head>
+<script src="verify.js"></script>
+
+<body>
+
+  <main class="container">
+
+    <div class="device">
+      <img src="assets/ipad.png" alt="Tablet preview">
+
+      <div class="overlay">
+        <div class="face-id">
+          <div class="scan-line"></div>
+        </div>
+
+        <h2>Photos Locked</h2>
+        <p>
+          This photo library is protected by an additional security layer.
+          Authentication is required.
+        </p>
+
+        <!-- PASSCODE DOTS -->
+        <div class="passcode">
+          <span></span><span></span><span></span><span></span>
+        </div>
+
+       <a href="verify.html" class="verify-btn">Verify with Backup Code</a>
+
+        <!-- DEVICE INFO -->
+        <div class="device-info">
+          <div>Demo Serial: VH3FPX12DW <span id="serial"></span></div>
+          <div>Demo IMEI: 352257674370942 <span id="imei"></span></div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
